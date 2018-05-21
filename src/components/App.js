@@ -1,18 +1,22 @@
 import React from 'react'
-import AddStuff from '../containers/AddStuff'
-import BottleO from './BottleO'
+import UserData from '../containers/UserData'
+
+
+const box = {
+    border: "1px solid black",
+    margin: "5px",
+    padding: "5px"
+}
+
+
 const App = () => {
-  return(
-    <div>
-      <BottleO title="Bottle Shop">
-        <div>Beer Bottle</div>
-        <div>Beer Bottle</div>
-        <div>Beer Bottle</div>
-        <div>Beer Bottle</div>
-      </BottleO>
-      <AddStuff/>
-    </div>
-  )
+    return (
+      <div>
+          <div style={box}>
+              <UserData/>
+          </div>
+      </div>
+    )
 }
 
 export default App
